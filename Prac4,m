@@ -1,0 +1,19 @@
+function dx=Prac4(t,x)
+
+%   DEFINICIÓN DE PARAMETROS  % 
+
+m = 10;  %kg 
+r = 0.05; % m 
+k = 100;
+
+
+% ------------------------------- %
+
+dx=zeros(2,1);
+
+% Definición de la Dinamica del Sistema %
+% Representación en Espacio de Estados %
+
+dx(1) = x(2);
+
+dx(2) = (-k/m)*(2/3)*x(1);
